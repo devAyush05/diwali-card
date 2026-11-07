@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Diwali – Priya Study Diary (PSD)</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;font-family:'Poppins',system-ui,sans-serif;color:#fff4dc;background:radial-gradient(circle at 20% 10%,#6b1a10,#2b0713 55%,#12030a);overflow-x:hidden}
+.wrap{max-width:1100px;margin:auto;padding:28px 18px 50px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.glass{background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.05));backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.25);border-radius:28px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.col{display:flex;flex-direction:column}
+h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(56px,8vw,86px);margin:0;line-height:1.05;background:linear-gradient(90deg,#f6dc9b,#d9a441,#f6dc9b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:6px 0 10px;opacity:.88;line-height:1.6}
+label{font-size:14px;margin:14px 0 6px;opacity:.9}
+input{width:100%;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.25);color:#fff;font:inherit;outline:none}
+input:focus{border-color:#e2b659}
+button{flex:1;min-width:150px;padding:14px;border:0;border-radius:14px;font:inherit;font-weight:600;cursor:pointer;color:#3a0d05;background:linear-gradient(90deg,#f1d28a,#d9a441);transition:.2s}
+button.alt{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}
+button:hover{transform:translateY(-2px);filter:brightness(1.07)}
+#mk{width:100%;margin-top:18px;flex:none}
+.btns{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.links{display:grid;gap:10px;margin-top:22px}
+.links a{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:inherit;text-decoration:none;font-weight:500;transition:.25s}
+.links a:hover{background:rgba(226,182,89,.2);transform:translateY(-2px)}
+.links small{display:block;opacity:.7;font-weight:400}
+.hide{display:none!important}
+.prev{position:sticky;top:18px;perspective:1200px}
+canvas{width:100%;height:auto;border-radius:22px;display:none;box-shadow:0 24px 70px rgba(0,0,0,.6)}
+canvas.show{display:block;animation:pop 1.1s cubic-bezier(.2,.8,.2,1)}
+@keyframes pop{from{opacity:0;transform:translateY(40px) scale(.9) rotateX(14deg);filter:blur(12px)}to{opacity:1;transform:none;filter:none}}
+#ph{aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px;padding:24px}
+#ph p{margin:0;opacity:.85;line-height:1.5}
+@media(max-width:860px){.wrap{grid-template-columns:1fr;padding:14px 12px 36px;gap:18px}.prev{position:static;order:-1}#ph{aspect-ratio:auto;padding:34px 20px}}
+@media(max-width:480px){.glass{padding:20px 16px;border-radius:22px}.btns{flex-direction:column}button{min-width:0;width:100%}.links a{padding:11px 12px;font-size:14px}canvas{border-radius:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="glass col">
+    <h1>Happy Diwali</h1>
+    <p class="sub">Wishing you and your family a very Happy Diwali from Priya Study Diary (PSD). Enter your name to open your surprise card.</p>
+    <label for="nm">Enter your name</label>
+    <input id="nm" type="text" maxlength="24" placeholder="Type your name here" autocomplete="off">
+    <button id="mk">Open My Surprise Card</button>
+    <div class="btns hide" id="dl">
+      <button id="dp">⬇ Download as Pic</button>
+      <button id="df" class="alt">⬇ Download as PDF</button>
+    </div>
+    <div class="links">
+      <a href="https://t.me/priyastudy_diary" target="_blank" rel="noopener"><svg width="30" height="30" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#2AABEE"/><path fill="#fff" d="M5.4 11.9l11.2-4.3c.5-.2 1 .1.8.9l-1.9 9c-.1.6-.5.8-1 .5l-2.9-2.1-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.4-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.2-.9z"/></svg><span>Telegram Channel<small>Join Priya Study Diary for daily study updates</small></span></a>
+      <a href="https://t.me/priyastudy_diary1" target="_blank" rel="noopener"><svg width="30" height="30" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#2AABEE"/><path fill="#fff" d="M5.4 11.9l11.2-4.3c.5-.2 1 .1.8.9l-1.9 9c-.1.6-.5.8-1 .5l-2.9-2.1-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.4-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.2-.9z"/></svg><span>Discussion Group<small>Ask your doubts and discuss with everyone</small></span></a>
+      <a href="https://www.youtube.com/@PriyaStudyDiary" target="_blank" rel="noopener"><svg width="30" height="22" viewBox="0 0 30 22"><rect width="30" height="22" rx="6" fill="#f00"/><path d="M12 6.5v9l8-4.5z" fill="#fff"/></svg><span>YouTube Channel<small>Watch and subscribe to Priya Study Diary</small></span></a>
+    </div>
+  </div>
+  <div class="prev">
+    <div id="ph" class="glass">
+      <svg width="120" height="90" viewBox="0 0 120 90" fill="none"><rect x="4" y="10" width="112" height="76" rx="10" fill="rgba(255,255,255,.08)" stroke="#d9a441" stroke-width="2"/><path d="M6 14l54 38 54-38" stroke="#d9a441" stroke-width="2"/><circle cx="60" cy="52" r="9" fill="#d9a441"/></svg>
+      <p>Your surprise card is waiting.<br>Enter your name and open it.</p>
+    </div>
+    <canvas id="c" width="1080" height="1350"></canvas>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function(){
+var cv=document.getElementById('c'),x=cv.getContext('2d'),W=1080,H=1350,nm=document.getElementById('nm'),opened=false;
+function rr(a,b,w,h,r){x.beginPath();x.moveTo(a+r,b);x.arcTo(a+w,b,a+w,b+h,r);x.arcTo(a+w,b+h,a,b+h,r);x.arcTo(a,b+h,a,b,r);x.arcTo(a,b,a+w,b,r);x.closePath()}
+function yt(a,b,w){var h=w*.72;rr(a,b,w,h,h*.28);x.fillStyle='#f00';x.fill();x.beginPath();x.moveTo(a+w*.4,b+h*.28);x.lineTo(a+w*.4,b+h*.72);x.lineTo(a+w*.68,b+h*.5);x.closePath();x.fillStyle='#fff';x.fill()}
+function tg(a,b,s){x.beginPath();x.arc(a+s/2,b+s/2,s/2,0,7);x.fillStyle='#2AABEE';x.fill();x.save();x.translate(a,b);x.scale(s/24,s/24);x.fillStyle='#fff';x.fill(new Path2D('M5.4 11.9l11.2-4.3c.5-.2 1 .1.8.9l-1.9 9c-.1.6-.5.8-1 .5l-2.9-2.1-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.4-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.2-.9z'));x.restore()}
+function dia(cx,cy,r){x.beginPath();x.moveTo(cx,cy-r);x.lineTo(cx+r,cy);x.lineTo(cx,cy+r);x.lineTo(cx-r,cy);x.closePath();x.fill()}
+function orn(cy,half){x.fillStyle=x.strokeStyle='#d9a441';x.lineWidth=2;x.beginPath();x.moveTo(W/2-half,cy);x.lineTo(W/2-18,cy);x.moveTo(W/2+18,cy);x.lineTo(W/2+half,cy);x.stroke();dia(W/2,cy,8)}
+function wrap(t,mx){var w=t.split(' '),l=[],c='';w.forEach(function(k){var n=c?c+' '+k:k;if(x.measureText(n).width>mx&&c){l.push(c);c=k}else c=n});l.push(c);return l}
+
+function render(){
+  var name=(nm.value||'').trim()||'Friend';
+  var g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#5a0f1a');g.addColorStop(.55,'#2a0610');g.addColorStop(1,'#12030a');x.fillStyle=g;x.fillRect(0,0,W,H);
+  var r=x.createRadialGradient(W/2,420,40,W/2,420,700);r.addColorStop(0,'rgba(217,164,65,.14)');r.addColorStop(1,'rgba(217,164,65,0)');x.fillStyle=r;x.fillRect(0,0,W,H);
+  var gold=x.createLinearGradient(0,0,W,H);gold.addColorStop(0,'#f6dc9b');gold.addColorStop(.5,'#c8923a');gold.addColorStop(1,'#f6dc9b');
+  x.strokeStyle=gold;x.lineWidth=4;rr(40,40,1000,1270,34);x.stroke();
+  x.strokeStyle='rgba(217,164,65,.55)';x.lineWidth=1.5;rr(64,64,952,1222,22);x.stroke();
+  x.fillStyle='#d9a441';[[64,64],[1016,64],[64,1286],[1016,1286]].forEach(function(p){dia(p[0],p[1],10)});
+  x.textAlign='center';x.fillStyle='#e2b659';x.font='500 30px Poppins, sans-serif';
+  if('letterSpacing' in x)x.letterSpacing='12px';x.fillText('FESTIVAL OF LIGHTS',W/2+6,175);if('letterSpacing' in x)x.letterSpacing='0px';
+  orn(215,170);
+  x.fillStyle=gold;x.font='180px "Great Vibes", cursive';x.fillText('Happy Diwali',W/2,420);
+  x.fillStyle='#fff';x.font='600 50px Poppins, sans-serif';x.fillText('Dear '+name+',',W/2,540);
+  x.fillStyle='#f3e3c4';x.font='400 32px Poppins, sans-serif';
+  var m='May the light of Diwali remove all darkness from your life. May Goddess Lakshmi bring wealth, Lord Ganesha bring wisdom, and Lord Ram bring peace and happiness. Wishing you success in your studies and joy at home.';
+  wrap(m,780).forEach(function(l,i){x.fillText(l,W/2,625+i*52)});
+  orn(925,120);
+  x.fillStyle='#caa86a';x.font='400 26px Poppins, sans-serif';x.fillText('With warm wishes from',W/2,985);
+  var sg='Priya Study Diary (PSD)';x.font='600 46px Poppins, sans-serif';var sw=x.measureText(sg).width,lw=68,tot=sw+20+lw,sx=(W-tot)/2;
+  x.textAlign='left';x.fillStyle=gold;x.fillText(sg,sx,1060);yt(sx+sw+20,1060-44,lw);
+  x.fillStyle='rgba(217,164,65,.4)';x.fillRect(150,1135,780,2);
+  x.font='500 24px Poppins, sans-serif';
+  var it=[['Telegram Channel',0],['Discussion Group',0],['YouTube',1]],ws=it.map(function(v){return (v[1]?44:40)+12+x.measureText(v[0]).width}),gap=46,all=ws.reduce(function(a,b){return a+b},0)+gap*2,px=(W-all)/2;
+  it.forEach(function(v,i){if(v[1])yt(px,1189,44);else tg(px,1186,40);x.fillStyle='#f3e3c4';x.fillText(v[0],px+(v[1]?56:52),1216);px+=ws[i]+gap});
+  x.textAlign='center'}
+
+function open(){
+  var n=nm.value.trim();
+  if(!n){nm.focus();nm.style.borderColor='#ff6b6b';return}
+  nm.style.borderColor='';
+  var f=document.fonts&&document.fonts.load?Promise.all([document.fonts.load('180px "Great Vibes"'),document.fonts.load('500 30px Poppins'),document.fonts.load('600 30px Poppins')]):Promise.resolve();
+  f.then(function(){
+    render();
+    if(!opened){opened=true;document.getElementById('ph').classList.add('hide');cv.classList.add('show');document.getElementById('dl').classList.remove('hide');document.getElementById('mk').textContent='Update My Card'}
+    document.querySelector('.prev').scrollIntoView({behavior:'smooth',block:'start'})
+  },function(){render()})}
+document.getElementById('mk').onclick=open;
+nm.addEventListener('keydown',function(e){if(e.key==='Enter')open()});
+nm.addEventListener('input',function(){nm.style.borderColor='';if(opened)render()});
+document.getElementById('dp').onclick=function(){cv.toBlob(function(b){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Diwali-Card-PSD.png';a.click()},'image/png')};
+document.getElementById('df').onclick=function(){try{var P=window.jspdf.jsPDF,d=new P({unit:'px',format:[W,H],orientation:'portrait'});d.addImage(cv.toDataURL('image/jpeg',.95),'JPEG',0,0,W,H);d.save('Diwali-Card-PSD.pdf')}catch(e){alert('Could not load the PDF tool. Please check your internet and try again.')}};
+})();
+</script>
+</body>
+</html>
